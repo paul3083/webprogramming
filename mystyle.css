@@ -1,0 +1,5 @@
+*{color:gray}
+        p:hover{background-color: aquamarine;}
+        a:link{color:aqua}
+        a:visited{color:cadetblue}
+        #name{background-color:aquamarine; color:cornflowerblue;}
