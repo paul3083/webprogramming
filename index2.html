@@ -7,33 +7,25 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
     <style>
-        input[type=text] {
+        *{outline: 0;}
+        input[type=text], textarea {
             font-weight: bold;
-            color: white;
-            border: 3px solid blue;
-
+            color: black;
+            border: 3px solid lightskyblue;
             margin-bottom: 10px;
             width: 90%;
         }
         input[type=text]:hover {
-            background-color: lightblue;
-        }
-        input[type=email] {
-            font-weight: bold;
-            color: white;
-            border: 3px solid blue;
-            margin-bottom: 10px;
-            width: 90%;
-        }
-        input[type=email]:hover {
             background-color: cornflowerblue;
         }
         input[type=submit] {
-            background-color: lightblue;
+            background-color: lightgreen;
             color: white;
+            outline-color: yellowgreen;
             border: none;
             padding: 16px 32px;
         }
+        textarea:focus{border:1px solid red;}
     </style>
 </head>
 <body>
@@ -44,7 +36,7 @@
             <label for="name">이름</label>
             <input type="text" id="name" name="name" placeholder="이름"><br>
             <label for="email">이메일</label>
-            <input type="email" id="email" name="email" placeholder="이메일"><br>
+            <input type="text" id="email" name="email" placeholder="이메일"><br>
             <label for="subject">상품 평</label>
             <textarea name="subject" id="subject" placeholder="상품을 평가해주세요" style="height: 100px"></textarea>
         </form>
